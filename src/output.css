@@ -174,14 +174,29 @@
   .order-\[1\] {
     order: 1;
   }
+  .m-auto {
+    margin: auto;
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-\[3\] {
     margin-top: 3;
+  }
+  .mt-\[5px\] {
+    margin-top: 5px;
   }
   .mt-\[20px\] {
     margin-top: 20px;
   }
   .mt-\[30px\] {
     margin-top: 30px;
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -192,14 +207,27 @@
   .table {
     display: table;
   }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
   }
   .h-\[20px\] {
     height: 20px;
   }
   .h-\[22px\] {
     height: 22px;
+  }
+  .h-\[35px\] {
+    height: 35px;
+  }
+  .h-\[40px\] {
+    height: 40px;
   }
   .h-\[52px\] {
     height: 52px;
@@ -213,11 +241,23 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
   .w-\[20px\] {
     width: 20px;
+  }
+  .w-\[35px\] {
+    width: 35px;
+  }
+  .w-\[40px\] {
+    width: 40px;
+  }
+  .w-\[50px\] {
+    width: 50px;
   }
   .w-\[84px\] {
     width: 84px;
@@ -239,6 +279,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -263,6 +306,9 @@
   }
   .gap-\[1\] {
     gap: 1;
+  }
+  .gap-\[10px\] {
+    gap: 10px;
   }
   .gap-\[15px\] {
     gap: 15px;
@@ -322,6 +368,9 @@
   .text-\[46px\] {
     font-size: 46px;
   }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
   .text-\[64px\] {
     font-size: 64px;
   }
@@ -369,9 +418,19 @@
       display: flex;
     }
   }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
   .lg\:h-\[1080px\] {
     @media (width >= 64rem) {
       height: 1080px;
+    }
+  }
+  .lg\:w-\[390px\] {
+    @media (width >= 64rem) {
+      width: 390px;
     }
   }
   .lg\:w-\[496\] {
