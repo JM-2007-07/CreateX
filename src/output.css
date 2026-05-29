@@ -434,6 +434,9 @@
   .gap-\[4\] {
     gap: 4;
   }
+  .gap-\[5\] {
+    gap: 5;
+  }
   .gap-\[8px\] {
     gap: 8px;
   }
@@ -604,6 +607,9 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .text-\[32px\] {
+    font-size: 32px;
+  }
   .text-\[46px\] {
     font-size: 46px;
   }
@@ -612,6 +618,9 @@
   }
   .text-\[200px\] {
     font-size: 200px;
+  }
+  .text-\[4632px\] {
+    font-size: 4632px;
   }
   .font-\[900\] {
     --tw-font-weight: 900;
@@ -703,6 +712,11 @@
   .lg\:h-\[338px\] {
     @media (width >= 64rem) {
       height: 338px;
+    }
+  }
+  .lg\:h-\[454px\] {
+    @media (width >= 64rem) {
+      height: 454px;
     }
   }
   .lg\:h-\[544px\] {
