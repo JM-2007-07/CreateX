@@ -254,6 +254,9 @@
   .h-\[52px\] {
     height: 52px;
   }
+  .h-\[64px\] {
+    height: 64px;
+  }
   .h-\[84px\] {
     height: 84px;
   }
@@ -419,6 +422,9 @@
   .gap-\[70px\] {
     gap: 70px;
   }
+  .gap-\[100px\] {
+    gap: 100px;
+  }
   .rounded-\[4px\] {
     border-radius: 4px;
   }
@@ -510,6 +516,9 @@
   }
   .py-\[10px\] {
     padding-block: 10px;
+  }
+  .py-\[60px\] {
+    padding-block: 60px;
   }
   .text-center {
     text-align: center;
@@ -709,6 +718,11 @@
   .lg\:w-\[810px\] {
     @media (width >= 64rem) {
       width: 810px;
+    }
+  }
+  .lg\:w-\[1300\] {
+    @media (width >= 64rem) {
+      width: 1300;
     }
   }
   .lg\:w-\[1300px\] {
