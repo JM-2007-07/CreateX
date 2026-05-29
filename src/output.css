@@ -227,6 +227,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
@@ -254,11 +257,17 @@
   .h-\[84px\] {
     height: 84px;
   }
+  .h-\[200px\] {
+    height: 200px;
+  }
   .h-\[214px\] {
     height: 214px;
   }
   .h-\[340px\] {
     height: 340px;
+  }
+  .h-\[400px\] {
+    height: 400px;
   }
   .h-\[416px\] {
     height: 416px;
@@ -274,6 +283,9 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-\[15px\] {
+    width: 15px;
   }
   .w-\[20px\] {
     width: 20px;
@@ -296,8 +308,17 @@
   .w-\[97px\] {
     width: 97px;
   }
+  .w-\[105px\] {
+    width: 105px;
+  }
   .w-\[112px\] {
     width: 112px;
+  }
+  .w-\[113px\] {
+    width: 113px;
+  }
+  .w-\[120px\] {
+    width: 120px;
   }
   .w-\[130px\] {
     width: 130px;
@@ -322,6 +343,12 @@
   }
   .w-full {
     width: 100%;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -374,8 +401,14 @@
   .gap-\[30px\] {
     gap: 30px;
   }
+  .gap-\[30x\] {
+    gap: 30x;
+  }
   .gap-\[35px\] {
     gap: 35px;
+  }
+  .gap-\[40\] {
+    gap: 40;
   }
   .gap-\[40px\] {
     gap: 40px;
@@ -415,6 +448,9 @@
   .bg-\[\#292C37\] {
     background-color: #292C37;
   }
+  .bg-\[\#7772F1\] {
+    background-color: #7772F1;
+  }
   .bg-\[\#F4F5F6\] {
     background-color: #F4F5F6;
   }
@@ -444,6 +480,9 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-\[24px\] {
+    padding: 24px;
   }
   .p-\[30px\] {
     padding: 30px;
@@ -545,6 +584,13 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .lg\:order-1 {
     @media (width >= 64rem) {
       order: 1;
@@ -608,6 +654,11 @@
   .lg\:h-\[1080px\] {
     @media (width >= 64rem) {
       height: 1080px;
+    }
+  }
+  .lg\:h-auto {
+    @media (width >= 64rem) {
+      height: auto;
     }
   }
   .lg\:w-\[280px\] {
@@ -735,11 +786,17 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
